@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgnew"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddPlayers">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/skyblue_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter \n Players Name"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/SkyBlue"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerOne"
+                android:background="@drawable/skyblue_border"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textColor="@color/SkyBlue"
+                android:drawableLeft="@drawable/xicon_new"
+                android:hint="Enter player one name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerTwo"
+                android:background="@drawable/skyblue_border"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/SkyBlue"
+                android:hint="Enter player two name"
+                android:drawableLeft="@drawable/oicon_bg" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/startGameButton"
+                android:layout_margin="30dp"
+                android:text="START GAME"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
